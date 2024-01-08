@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.bandeau {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 50px;
+}
+
+.titre h1 {
+    margin: 0;
+}
+
+.menu-hamburger {
+    display: none; /* Masquer le menu hamburger par défaut sur les écrans larges */
+    cursor: pointer;
+}
+
+.barre {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.menu-hamburger
+{
+    display: block;
+}
