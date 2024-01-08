@@ -26,7 +26,8 @@ body{
 
 .menu-hamburger {
     display: none; /* Masquer le menu hamburger par défaut sur les écrans larges */
-     cursor: pointer; /*Modifie le cusrseur lorsqu'il passe dessus */
+    cursor: pointer; /*Modifie le cusrseur lorsqu'il passe dessus */
+    background-color: #1b1b1b;
 }
 
 .barre {
