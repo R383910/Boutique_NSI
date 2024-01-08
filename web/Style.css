@@ -1,12 +1,12 @@
 body{
-    background-color: black;
+    background-color:#1b1b1b;
     color: white;
     margin: 0;
     padding: 0;
 }
 
 .bandeau {
-    background-color: black;
+    background-color: #1b1b1b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@ body{
 
 .menu-hamburger {
     display: none; /* Masquer le menu hamburger par défaut sur les écrans larges */
-    cursor: pointer;
+     cursor: pointer; /*Modifie le cusrseur lorsqu'il passe dessus */
 }
 
 .barre {
