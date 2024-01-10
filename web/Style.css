@@ -142,6 +142,11 @@ Animations
     align-items: center;
 } 
 
+all-game a {
+    color: white;
+    text-decoration:none;
+}
+
 
 
 /** Estetique des jeu du moment **/
