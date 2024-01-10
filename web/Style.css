@@ -142,7 +142,7 @@ Animations
     align-items: center;
 } 
 
-all-game a {
+.all-game a {
     color: white;
     text-decoration:none;
 }
