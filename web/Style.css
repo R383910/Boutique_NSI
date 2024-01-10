@@ -132,3 +132,18 @@ Animations
 #toggle {
     display: none;
 }
+
+
+/** Tout ce qui va être UI et jeu présenté **/
+
+.all-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.all-game div h3{
+    text-align: center;
+}
+
+
