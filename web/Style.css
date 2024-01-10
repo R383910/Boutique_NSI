@@ -134,7 +134,6 @@ Animations
     display: none;
 }
 
-
 /** Tout ce qui va être UI et jeu présenté **/
 
 .all-game {
@@ -143,11 +142,26 @@ Animations
     align-items: center;
 } 
 
-.all-game div h3{
-    text-align: center;
+
+
+/** Estetique des jeu du moment **/
+
+.all-game div {
+    border-width: 10px;
+    border-style: solid;
+    padding: 20px;
 }
 
-.all-game a {
-    color: white;
-    text-decoration: none;
+.right{
+    margin-right: 50px;
 }
+
+.left{
+    margin-left: 50px;
+}
+
+.all-game div h3{
+    text-align: center;
+    margin-top: 0px;
+}
+
