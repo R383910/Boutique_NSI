@@ -147,4 +147,7 @@ Animations
     text-align: center;
 }
 
-
+.all-game a {
+    color: white;
+    text-decoration: none;
+}
