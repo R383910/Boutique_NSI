@@ -154,7 +154,23 @@ Animations
 .all-game div {
     border-width: 10px;
     border-style: solid;
+    border-radius: 15px;
+    border-color: #202020;
     padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.all-game img{
+    border-radius: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.all-game div:hover {
+    border-color: rgb(81, 119, 255);
+}
+
+.all-game div:hover img{
+    border-radius: 0px;
 }
 
 .right{
