@@ -74,7 +74,7 @@ Nav Styles
     margin-top: 50px;
 }
 
-nav {
+header nav {
 
     text-align: left;
     margin-left: 25%;
@@ -167,17 +167,11 @@ Animations
     transition: all 0.3s ease-in-out;
 }
 
-.left:hover {
+.left:hover, .center:hover, .right:hover {
     border-color: rgb(81, 119, 255);
 }
 
-.center:hover{
-    border-color: rgb(81, 119, 255);
-}
 
-.right:hover {
-    border-color: rgb(81, 119, 255);
-}
 
 .all-game div:hover img{
     border-radius: 10px;
@@ -201,7 +195,7 @@ Animations
     padding-bottom: 0px;
     padding-right: 10px;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 .all-game div:hover a div{
@@ -215,6 +209,11 @@ Animations
 
 .grss:hover{
     font-size: 20px;
+}
+
+nav.grss {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .all-game div a div div{
@@ -234,4 +233,7 @@ Animations
 footer {
     background-color: #202020;
     margin-top: 50px;
+    color:white;
+    text-decoration: none;
+
 }
