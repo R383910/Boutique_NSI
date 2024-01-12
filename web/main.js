@@ -13,7 +13,7 @@ function changeContent(selectedValue) {
     </a>`;
     } 
     else if (selectedValue === "deluxe-hog") {
-        contentContainerhog.innerHTML = `<p>Prix : </p><p class="old-price">1099,99 €</p><p> 1579,99 €</p>`;
+        contentContainerhog.innerHTML = `<p>Prix : </p><p class="old-price">999,99 €</p><p> 1579,99 €</p>`;
         linkchangehog.innerHTML = `<a href="https://store.epicgames.com/fr/p/hogwarts-legacy">
         <h3>L'héritage de la verru de porc</h3>
         <img src="img/hogwarts.png" alt="Hogwarts Legacy" width=288px height=384px>
