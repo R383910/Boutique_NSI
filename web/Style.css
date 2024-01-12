@@ -190,7 +190,7 @@ Animations
     margin-top: 0px;
 }
 
-.all-game div a div{
+.all-game div .info-game, .info-game div{
     transform: scale(0);
     padding-bottom: 0px;
     padding-right: 10px;
@@ -198,8 +198,13 @@ Animations
     padding-top: 0px;
 }
 
-.all-game div:hover a div{
+.all-game div:hover div{
     transform: scale(1);
+}
+
+div.pres-game {
+    padding: 0px;
+    border: none;
 }
 
 .grss{
@@ -211,19 +216,32 @@ Animations
     font-size: 20px;
 }
 
-nav.grss {
-    margin-top: 20px;
-    margin-bottom: 20px;
+nav.grss, .info-game p.grss, .info-game div p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
 
-.all-game div a div div{
+nav.grss{
+    height: 35px;
+}
+
+select, option{
+    background-color: #313131;
+    color:white;
+	border: #777 1px solid;
+	margin: 0 0 1.5em 0;
+}
+
+.info-game div{
     border: 0px;
     padding: 0px;
 }
 
- .all-game div a div div p{
+.grss p{
     display: inline;
- }
+}
 
 .old-price{
     color: rgba(245, 245, 245, 0.6);
