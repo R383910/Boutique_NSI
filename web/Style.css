@@ -20,6 +20,13 @@ body {
     max-width: 100%;
     height: auto;
     width: 50px;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.logo img:hover{
+    content: url('img/Trollface_non-free.png');
 }
 
 .titre h1 {
