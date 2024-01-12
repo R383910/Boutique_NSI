@@ -20,14 +20,14 @@ function changeContent(selectedValue) {
     </a>`;
     } 
     else if(selectedValue === "classique-gta"){
-        contentContainergta.innerHTML = `<p>Prix : </p><p class="old-price">1099,99 €</p><p> 1579,99 €</p>`;
-        linkchangegat.innerHTML = `<a href="https://store.epicgames.com/fr/p/grand-theft-auto-v">
+        contentContainergta.innerHTML = `<p>Prix : </p><p class="old-price">199,99 €</p><p> 508,99 €</p>`;
+        linkchangegta.innerHTML = `<a href="https://store.epicgames.com/fr/p/grand-theft-auto-v">
         <h3>Grand vol d'auto V</h3>
         <img src="img/gta.jpg" alt="GTA V" width=288px height=384px>
     </a>`;
     }
     else if(selectedValue === "deluxe-gta"){
-        contentContainergta.innerHTML = `<p>Prix : </p><p class="old-price">199,99 €</p><p> 508,99 €</p>`;
+        contentContainergta.innerHTML = `<p>Prix : </p><p class="old-price">899,99 €</p><p> 1879,99 €</p>`;
         linkchangegta.innerHTML = `<a href="https://store.epicgames.com/fr/p/grand-theft-auto-v">
         <h3>Grand vol d'auto V</h3>
         <img src="img/gta-premium.jpg" alt="GTA V" width=288px height=384px>
