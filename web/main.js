@@ -46,7 +46,7 @@ function changeContent(selectedValue) {
     setTimeout(() => {
         linkchangegta.innerHTML = `<a href="https://store.epicgames.com/fr/p/grand-theft-auto-v">
         <h3>Grand vol d'auto V</h3>
-        <img src="img/gta-premium.jpg" alt="GTA V" width=288px height=384px></a>`;
+        <img src="img/gta.jpg" alt="GTA V" width=288px height=384px></a>`;
         linkchangegta.classList.add("fade-in");
     },500);
     }
