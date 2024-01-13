@@ -56,18 +56,19 @@
                 <div class="grss" id="prix-change-gta"><p>Prix : </p><p class="old-price">29,99 €</p><p> 157,99 €</p></div>
             </div>
         </div>
-        <div class="center">
+        <div class="center" id="all-change-valo">
             <div class="pres-game">
                 <a href="https://store.epicgames.com/fr/p/valorant">
                     <h3>Toxic shooter</h3>
                     <img src="img/valo.jpg" alt="Valorant" width=288px height=384px>
                 </a>
             </div>
-            <div class="info-game">
+            <div class="info-game" >
                 <p class="grss">Espace requis : 28 Go</p>
                 <nav class="grss">Version :
-                    <select>......
-                        <option selected="selected">Classique</option>
+                    <select onchange="changeContent(this.value)">......
+                        <option value="valo" selected>Toxique</option>
+                        <option value="lol" >Très Toxique</option>
                     </select>
                 </nav>                
                 <div class="grss"><p>Prix : </p><p class="old-price">Gratuit</p><p> 79,99 €</p></div>

@@ -2,6 +2,8 @@ function changeContent(selectedValue) {
     contentContainerhog = document.getElementById("prix-change-hog");
     linkchangehog = document.getElementById("link-change-hog");
 
+    contentContainerriot = document.getElementById("all-change-valo");
+
     contentContainergta = document.getElementById("prix-change-gta");
     linkchangegta = document.getElementById("link-change-gta");
 
@@ -65,6 +67,53 @@ function changeContent(selectedValue) {
         linkchangegta.classList.add("fade-in");
     },500);
     }
+    else if (selectedValue === "valo") {
+        contentContainerriot.classList.add("fade-out");
+    setTimeout(() => {
+        contentContainerriot.innerHTML = `<div class="pres-game">
+        <a href="https://store.epicgames.com/fr/p/valorant">
+            <h3>Toxic shooter</h3>
+            <img src="img/valo.jpg" alt="Valorant" width=288px height=384px>
+        </a>
+    </div>
+    <div class="info-game" >
+        <p class="grss">Espace requis : 28 Go</p>
+        <nav class="grss">Version :
+            <select onchange="changeContent(this.value)">......
+                <option value="valo" selected>Classique</option>
+                <option value="lol">Très toxique</option>
+            </select>
+        </nav>                
+        <div class="grss"><p>Prix : </p><p class="old-price">Gratuit</p><p> 79,99 €</p></div>
+    </div>`;
+        contentContainerriot.classList.remove("fade-out");
+        contentContainerriot.classList.add("fade-in");
+    },500);
+    }
+    else if (selectedValue === "lol") {
+        contentContainerriot.classList.add("fade-out");
+    setTimeout(() => {
+        contentContainerriot.innerHTML = `<div class="pres-game">
+        <a href="https://www.leagueoflegends.com">
+            <h3>La douche est loin</h3>
+            <img src="img/lol.jpg" alt="Lol" width=288px height=384px>
+        </a>
+    </div>
+    <div class="info-game" >
+        <p class="grss">Espace requis : 12 Go</p>
+        <nav class="grss">Version :
+            <select onchange="changeContent(this.value)">......
+                <option value="valo">Classique</option>
+                <option value="lol" selected>Très toxique</option>
+            </select>
+        </nav>                
+        <div class="grss"><p>Prix : </p><p class="old-price">Gratuit</p><p> Votre âme sufira</p></div>
+    </div>`;
+        contentContainerriot.classList.remove("fade-out");
+        contentContainerriot.classList.add("fade-in");
+    },500);
+    }
+
 
     setTimeout(() => {
         linkchangehog.classList.remove("fade-in");
@@ -76,5 +125,7 @@ function changeContent(selectedValue) {
         contentContainergta.classList.remove("fade-in-price");
         contentContainerhog.classList.remove("fade-out-price");
         contentContainergta.classList.remove("fade-out-price");
+        contentContainerriot.classList.remove("fade-out");
+        contentContainerriot.classList.remove("fade-in");
     }, 500);
 }
