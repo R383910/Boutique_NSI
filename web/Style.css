@@ -29,8 +29,15 @@ body {
     content: url('img/Trollface_non-free.png');
 }
 
-.link-change-gta img:hover{
+.left img:hover{
     content: url("img/gta.jpg");
+}
+
+.center img:hover{
+    content: url("img/valo.jpg");
+}
+.right img:hover {
+    content: url("img/hogwarts.png");
 }
 
 .titre h1 {

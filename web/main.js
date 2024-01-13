@@ -16,7 +16,7 @@ function changeContent(selectedValue) {
     setTimeout(() => {
         linkchangehog.innerHTML = `<a href="https://store.epicgames.com/fr/p/hogwarts-legacy">
         <h3>L'héritage de la verru de porc</h3>
-        <img src="img/hogwarts.png" alt="Hogwarts Legacy" width=288px height=384px></a>`;
+        <img src="img/hogwarts-modified.png" alt="Hogwarts Legacy" width=288px height=384px></a>`;
         linkchangehog.classList.add("fade-in");
     }, 500); 
     } 
@@ -31,7 +31,7 @@ function changeContent(selectedValue) {
     setTimeout(() => {
         linkchangehog.innerHTML = `<a href="https://store.epicgames.com/fr/p/hogwarts-legacy">
         <h3>L'héritage de la verru de porc</h3>
-        <img src="img/hogwarts.png" alt="Hogwarts Legacy" width=288px height=384px></a>`;
+        <img src="img/hogwarts-modified.png" alt="Hogwarts Legacy" width=288px height=384px></a>`;
         linkchangehog.classList.add("fade-in");
     }, 500); 
     } 
@@ -46,7 +46,7 @@ function changeContent(selectedValue) {
     setTimeout(() => {
         linkchangegta.innerHTML = `<a href="https://store.epicgames.com/fr/p/grand-theft-auto-v">
         <h3>Grand vol d'auto V</h3>
-        <img src="img/gta.jpg" alt="GTA V" width=288px height=384px></a>`;
+        <img src="img/gta-premium-modified.jpg" alt="GTA V" width=288px height=384px></a>`;
         linkchangegta.classList.add("fade-in");
     },500);
     }
@@ -61,7 +61,7 @@ function changeContent(selectedValue) {
     setTimeout(() => {
         linkchangegta.innerHTML = `<a href="https://store.epicgames.com/fr/p/grand-theft-auto-v">
         <h3>Grand vol d'auto V</h3>
-        <img src="img/gta-premium.jpg" alt="GTA V" width=288px height=384px></a>`;
+        <img src="img/gta-premium-modified.jpg" alt="GTA V" width=288px height=384px></a>`;
         linkchangegta.classList.add("fade-in");
     },500);
     }
