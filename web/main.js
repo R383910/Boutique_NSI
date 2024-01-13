@@ -16,7 +16,7 @@ function changeContent(selectedValue) {
     setTimeout(() => {
         linkchangehog.innerHTML = `<a href="https://store.epicgames.com/fr/p/hogwarts-legacy">
         <h3>L'héritage de la verru de porc</h3>
-        <img src="img/hogwarts-modified.png" alt="Hogwarts Legacy" width=288px height=384px></a>`;
+        <img src="img/hogwarts.png" alt="Hogwarts Legacy" width=288px height=384px></a>`;
         linkchangehog.classList.add("fade-in");
     }, 500); 
     } 
