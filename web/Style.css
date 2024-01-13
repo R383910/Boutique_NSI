@@ -29,17 +29,6 @@ body {
     content: url('img/Trollface_non-free.png');
 }
 
-.left img:hover{
-    content: url("img/gta.jpg");
-}
-
-.center img:hover{
-    content: url("img/valo.jpg");
-}
-.right img:hover {
-    content: url("img/hogwarts.png");
-}
-
 .titre h1 {
     margin: 0;
 }
