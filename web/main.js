@@ -94,7 +94,7 @@ function changeContent(selectedValue) {
         contentContainerriot.classList.add("fade-out");
     setTimeout(() => {
         contentContainerriot.innerHTML = `<div class="pres-game">
-        <a href="https://www.leagueoflegends.com">
+        <a href="https://store.epicgames.com/fr/p/league-of-legends">
             <h3>La douche est loin</h3>
             <img src="img/lol.jpg" alt="Lol" width=288px height=384px>
         </a>
