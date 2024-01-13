@@ -29,6 +29,10 @@ body {
     content: url('img/Trollface_non-free.png');
 }
 
+.link-change-gta img:hover{
+    content: url("img/gta.jpg");
+}
+
 .titre h1 {
     margin: 0;
 }
