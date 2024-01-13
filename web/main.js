@@ -107,7 +107,7 @@ function changeContent(selectedValue) {
                 <option value="lol" selected>Très toxique</option>
             </select>
         </nav>                
-        <div class="grss"><p>Prix : </p><p class="old-price">Gratuit</p><p> Votre âme sufira</p></div>
+        <div class="grss"><p>Prix : </p><p class="old-price">Gratuit</p><p> Votre âme suffira</p></div>
     </div>`;
         contentContainerriot.classList.remove("fade-out");
         contentContainerriot.classList.add("fade-in");
