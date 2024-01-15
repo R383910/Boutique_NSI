@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pas Epic Games</title>
+    <link rel="icon" href="img/favico.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <header class="bandeau">
+        <div class="logo">
+            <a href="html.html">
+            <img src="img/Logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="titre">
+            <h1>Pas Epic Games</h1>
+        </div>
+        <input id="toggle" type="checkbox"></input>
+
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
+
+        <div class="nav" style="top: 70px">
+            <div class="nav-wrapper">
+                <nav class="nav-menu">
+                    <a href="html.html">Home</a><br>
+                    <a href="Unreal.html">Unreal Engine</a><br>
+                    <a href="https://www.epicgames.com/site/fr/home">Services</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="all-game">
+        <div class="left">
+            <div class="pres-game" id="link-change-gta">
+                <a href="https://store.epicgames.com/fr/p/grand-theft-auto-v" >
+                    <h3>Grand vol d'auto V</h3>
+                    <img src="img/gta.jpg" alt="GTA V" width=288px height=384px>
+                </a>
+            </div>
+            <div class="info-game">
+                <p class="grss">Espace requis : 90 Go</p>
+                <nav class="grss">Version :
+                    <select class="version-ch" name="Version" id="ver-ch" onchange="changeContent(this.value)" required>......
+                        <option value="classique-gta" selected>Classique</option>
+                        <option value="deluxe-gta">Deluxe</option>
+                    </select>
+                </nav>
+                <div class="grss" id="prix-change-gta"><p>Prix : </p><p class="old-price">29,99 €</p><p> 157,99 €</p></div>
+            </div>
+        </div>
+        <div class="center" id="all-change-valo">
+            <div class="pres-game">
+                <a href="https://store.epicgames.com/fr/p/valorant">
+                    <h3>Toxic shooter</h3>
+                    <img src="img/valo.jpg" alt="Valorant" width=288px height=384px>
+                </a>
+            </div>
+            <div class="info-game" >
+                <p class="grss">Espace requis : 28 Go</p>
+                <nav class="grss">Version :
+                    <select onchange="changeContent(this.value)">......
+                        <option value="valo" selected>Toxique</option>
+                        <option value="lol" >Très Toxique</option>
+                    </select>
+                </nav>                
+                <div class="grss"><p>Prix : </p><p class="old-price">Gratuit</p><p> 79,99 €</p></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="pres-game" id="link-change-hog">
+                <a href="https://store.epicgames.com/fr/p/hogwarts-legacy">
+                    <h3>L'héritage de la verru de porc</h3>
+                    <img src="img/hogwarts.png" alt="Hogwarts Legacy" width=288px height=384px>
+                </a>
+            </div>
+            <div class="info-game">
+                <p class="grss">Espace requis : 76 Go</p>
+                <nav class="grss">Version :
+                    <select onchange="changeContent(this.value)">......
+                        <option value="classique-hog" selected>Classique</option>
+                        <option value="deluxe-hog">Deluxe</option>
+                    </select>
+                </nav>
+                <div class="grss" id="prix-change-hog"><p>Prix : </p><p class="old-price">59,99 €</p><p> 210,99 €</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/ytb.png" alt="Youtube"></a>
+    <br/>
+    <a href="https://www.perdu.com"><img src="img/LOST.jpg" alt="Perdu ?"></a>
+    <br/>
+    <a href="https://discord.com"><img src="img/discord.jpg" alt="Discord"></a>
+    <br/>
+    <a href="https://github.com/R383910/Boutique_NSI"><img src="img/github.png" alt="Github"></a>
+</footer>
+</html>
