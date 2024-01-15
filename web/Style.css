@@ -133,9 +133,12 @@ Animations
     margin-top: -7px;
 }
 
-#toggle:checked + .hamburger + .nav {
+#toggle:checked + .hamburger + .nav , body {
     top: 0;
     transform: scale(1);
+    body{
+        overflow: hidden;
+    }
 }
 
 #toggle {
