@@ -5,7 +5,6 @@ body {
     padding: 0;
     font-family: "Inter", sans-serif;
 }
-
 .bandeau {
     background-color: #1b1b1b;
     display: flex;
@@ -71,6 +70,7 @@ Nav Styles
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
+
 }
 
 .nav-wrapper {
@@ -82,7 +82,6 @@ Nav Styles
 }
 
 header nav {
-
     text-align: left;
     margin-left: 25%;
 }
@@ -269,7 +268,7 @@ footer a{
 }
 
 footer :hover{
-    color: darkblue;
+    color: blue;
 }
 
 
