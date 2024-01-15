@@ -129,3 +129,20 @@ function changeContent(selectedValue) {
         contentContainerriot.classList.remove("fade-in");
     }, 500);
 }
+
+var toggleCheckbox = document.getElementById('toggle');
+
+toggleCheckbox.addEventListener('change', function() {
+    // Votre code JavaScript ici
+    if (toggleCheckbox.checked) {
+        // La checkbox est cochée, exécutez le code souhaité
+        console.log('La checkbox est cochée.');
+        document.body.style.overflow = 'hidden';
+        // Vous pouvez ajouter d'autres actions ou conditions ici
+    } else {
+        // La checkbox n'est pas cochée, exécutez le code souhaité
+        console.log('La checkbox n\'est pas cochée.');
+        document.body.style.overflow = 'visible';
+        // Vous pouvez ajouter d'autres actions ou conditions ici
+    }
+});
