@@ -103,7 +103,7 @@ function changeContent(selectedValue) {
         <p class="grss">Espace requis : 12 Go</p>
         <nav class="grss">Version :
             <select onchange="changeContent(this.value)">......
-                <option value="valo">Classique</option>
+                <option value="valo">Toxique</option>
                 <option value="lol" selected>Très toxique</option>
             </select>
         </nav>                

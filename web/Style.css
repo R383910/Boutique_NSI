@@ -4,9 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
-    margin-bottom: 100px;
 }
-
 .bandeau {
     background-color: #1b1b1b;
     display: flex;
@@ -60,6 +58,7 @@ body {
 Nav Styles
 **/
 .nav {
+    z-index: 2;
     background-color: #1b1b1b;
     position: fixed;
     width: 100%;
@@ -71,6 +70,7 @@ Nav Styles
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
+
 }
 
 .nav-wrapper {
@@ -82,7 +82,6 @@ Nav Styles
 }
 
 header nav {
-
     text-align: left;
     margin-left: 25%;
 }
@@ -134,9 +133,12 @@ Animations
     margin-top: -7px;
 }
 
-#toggle:checked + .hamburger + .nav {
+#toggle:checked + .hamburger + .nav , body {
     top: 0;
     transform: scale(1);
+    body{
+        overflow: hidden;
+    }
 }
 
 #toggle {
@@ -261,7 +263,15 @@ footer {
     margin-top: 50px;
     color:white;
     text-decoration: none;
+}
 
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer :hover{
+    color: blue;
 }
 
 
@@ -286,4 +296,9 @@ footer {
 .fade-in-price {
     opacity: 1;
     transition: opacity 1.5s ease-in-out, transform 1s ease-in-out;
+}
+
+footer img{
+    width: 70px;
+    height: auto;
 }
