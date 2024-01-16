@@ -172,3 +172,8 @@ footer a{
 footer :hover{
     color: blue;
 }
+
+footer img{
+    width: 70px;
+    height: auto;
+}
