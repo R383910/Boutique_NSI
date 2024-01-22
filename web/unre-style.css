@@ -1,3 +1,4 @@
+/* ============= Body Styles ============= */
 body {
     background-color: #1b1b1b;
     color: white;
@@ -5,6 +6,8 @@ body {
     padding: 0;
     font-family: "Inter", sans-serif;
 }
+
+/* ============= Header Styles ============= */
 .bandeau {
     background-color: #1b1b1b;
     display: flex;
@@ -23,7 +26,7 @@ body {
     transform: scale(1);
 }
 
-.logo img:hover{
+.logo img:hover {
     content: url('img/Trollface_non-free.png');
 }
 
@@ -54,9 +57,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-/**
-Nav Styles
-**/
+/* ============= Navigation Styles ============= */
 .nav {
     z-index: 2;
     background-color: #1b1b1b;
@@ -70,7 +71,6 @@ Nav Styles
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
-
 }
 
 .nav-wrapper {
@@ -115,9 +115,7 @@ nav a:hover:before {
     height: 100%;
 }
 
-/**
-Animations
-**/
+/* ============= Hamburger Animation Styles ============= */
 #toggle:checked + .hamburger .top-bun {
     transform: rotate(-45deg);
     margin-top: 25px;
@@ -133,10 +131,11 @@ Animations
     margin-top: -7px;
 }
 
-#toggle:checked + .hamburger + .nav , body {
+#toggle:checked + .hamburger + .nav,
+body {
     top: 0;
     transform: scale(1);
-    body{
+    body {
         overflow: hidden;
     }
 }
@@ -144,8 +143,9 @@ Animations
 #toggle {
     display: none;
 }
-/* ===============================MILIEU==================================*/
-body div.solo{
+
+/* =============================== Middle Section =============================== */
+body div.solo {
     text-align: center;
 }
 
@@ -156,24 +156,25 @@ div.solo p {
 .text-end {
     margin-bottom: 60px;
 }
-/* ===============================FOOTER==================================*/
+
+/* =============================== Footer Styles =============================== */
 footer {
     background-color: #202020;
     margin-top: 50px;
-    color:white;
-    text-decoration: none;
-}
-
-footer a{
     color: white;
     text-decoration: none;
 }
 
-footer :hover{
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer:hover {
     color: blue;
 }
 
-footer img{
+footer img {
     width: 70px;
     height: auto;
 }

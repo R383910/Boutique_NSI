@@ -1,4 +1,7 @@
-function changeContent(selectedValue) {
+// Script des Formulaires des jeux :
+    function changeContent(selectedValue) {
+
+    // Variable permettant de retrouver les catégories de formulaire dans le code
     contentContainerhog = document.getElementById("prix-change-hog");
     linkchangehog = document.getElementById("link-change-hog");
 
@@ -7,21 +10,29 @@ function changeContent(selectedValue) {
     contentContainergta = document.getElementById("prix-change-gta");
     linkchangegta = document.getElementById("link-change-gta");
 
+
+    // On vérifie l'option du formulaire qui a été entré
+    // Pas besoin de faire des fonctions différentes pour chaque formulaire
     if (selectedValue === "classique-hog") {
         contentContainerhog.classList.add("fade-out-price");
     setTimeout(() => {
+        // Une fois l'option selectionnée on change le code HTML : ici on change le prix et on ajoute des animations puis on rajoute un Timeout pour que l'annimation ait le teps de se faire
         contentContainerhog.innerHTML = `<p>Prix : </p><p class="old-price">59,99 €</p><p> 210,99 €</p>`;
         contentContainerhog.classList.remove("fade-out-price");
         contentContainerhog.classList.add("fade-in-price");
     }, 500); 
         linkchangehog.classList.add("fade-out");
     setTimeout(() => {
+        // Ici on change l'image et le Titre du jeu puis on utilise les même animation rajouté précédement
+        // On est obligé de faire cette partie en 2 fois car lorsque le programme JS regarde le HTML, il utilise seulement la variable concernant la partie du code inclut dans le formulaire
+        // Il faut donc créer 2 vaariable pour changer les 2 parties du code que l'ont veux modifier
         linkchangehog.innerHTML = `<a href="https://store.epicgames.com/fr/p/hogwarts-legacy">
         <h3>L'héritage de la verru de porc</h3>
         <img src="img/hogwarts.png" alt="Hogwarts Legacy" width=288px height=384px></a>`;
         linkchangehog.classList.add("fade-in");
     }, 500); 
-    } 
+    }
+    // On répète le même processus avec d'autre options
     else if (selectedValue === "deluxe-hog") {
         contentContainerhog.classList.add("fade-out-price");
     setTimeout(() => {
@@ -36,7 +47,8 @@ function changeContent(selectedValue) {
         <img src="img/hogwarts-deluxe.jpg" alt="Hogwarts Legacy" width=288px height=384px></a>`;
         linkchangehog.classList.add("fade-in");
     }, 500); 
-    } 
+    }
+    // On répète le même processus avec d'autre options
     else if(selectedValue === "classique-gta"){
         contentContainergta.classList.add("fade-out-price");
     setTimeout(() => {
@@ -52,6 +64,7 @@ function changeContent(selectedValue) {
         linkchangegta.classList.add("fade-in");
     },500);
     }
+    // On répète le même processus avec d'autre options
     else if(selectedValue === "deluxe-gta"){
         contentContainergta.classList.add("fade-out-price");
     setTimeout(() => {
@@ -67,6 +80,8 @@ function changeContent(selectedValue) {
         linkchangegta.classList.add("fade-in");
     },500);
     }
+    // Ici comme on change tout le jeu on utilise uniquement une varible qui prend en compte toute la div ou est situé le jeu puis on change tout le code
+    // Les même animations sont utilisées
     else if (selectedValue === "valo") {
         contentContainerriot.classList.add("fade-out");
     setTimeout(() => {
@@ -90,6 +105,7 @@ function changeContent(selectedValue) {
         contentContainerriot.classList.add("fade-in");
     },500);
     }
+    // On répète le même processus que pour le "else" précédent
     else if (selectedValue === "lol") {
         contentContainerriot.classList.add("fade-out");
     setTimeout(() => {
@@ -114,7 +130,7 @@ function changeContent(selectedValue) {
     },500);
     }
 
-
+    // On prend en compte tout les timeout pour les enlever à la fin de l'action
     setTimeout(() => {
         linkchangehog.classList.remove("fade-in");
         linkchangegta.classList.remove("fade-in");
@@ -130,30 +146,40 @@ function changeContent(selectedValue) {
     }, 500);
 }
 
-toggleCheckbox = document.getElementById('toggle');
+    // Ici on sélectionne une option de base lorsque l'on recharge la page
+    versionSelectgta = document.getElementById('ver-ch');
+    window.addEventListener('popstate', function () {
+        versionSelectgta.value = 'classique-gta';
+    });
 
-toggleCheckbox.addEventListener('change', function() {
-    if (toggleCheckbox.checked) {
-        console.log('La checkbox est cochée.');
-        document.body.style.overflow = 'hidden';
-    } else {
-        console.log('La checkbox n\'est pas cochée.');
-        document.body.style.overflow = 'visible';
-        
-    }
-});
+    versionSelecttox = document.getElementById('tox');
+    window.addEventListener('popstate', function () {
+        versionSelecttox.value = 'valo';
+    });
 
-versionSelectgta = document.getElementById('ver-ch');
-window.addEventListener('popstate', function () {
-    versionSelectgta.value = 'classique-gta';
-});
+    versionSelecthog = document.getElementById('hog');
+    window.addEventListener('popstate', function () {
+        versionSelecthog.value = 'classique-hog';
+    });
 
-versionSelecttox = document.getElementById('tox');
-window.addEventListener('popstate', function () {
-    versionSelecttox.value = 'valo';
-});
 
-versionSelecthog = document.getElementById('hog');
-window.addEventListener('popstate', function () {
-    versionSelecthog.value = 'classique-hog';
-});
+
+// Script du menu déroulant :
+
+    // Ici on regarde si la checkbox du menu déroulant est coché et si oui on empêche le déroulement de l'arrière plan sans le déroulement du menu
+    // Pour empêcher que lorsqu'on défile de le menu on affiche a la place du bandeau du site la partie jeu
+
+    toggleCheckbox = document.getElementById('toggle');
+
+    toggleCheckbox.addEventListener('change', function() {
+        if (toggleCheckbox.checked) {
+            console.log('La checkbox est cochée.');
+            document.body.style.overflow = 'hidden';
+        } else {
+            console.log('La checkbox n\'est pas cochée.');
+            document.body.style.overflow = 'visible';
+
+        }
+    });
+
+

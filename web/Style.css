@@ -1,3 +1,4 @@
+/* ============= Body Styles ============= */
 body {
     background-color: #1b1b1b;
     color: white;
@@ -5,6 +6,8 @@ body {
     padding: 0;
     font-family: "Inter", sans-serif;
 }
+
+/* ============= Header Styles ============= */
 .bandeau {
     background-color: #1b1b1b;
     display: flex;
@@ -23,7 +26,7 @@ body {
     transform: scale(1);
 }
 
-.logo img:hover{
+.logo img:hover {
     content: url('img/Trollface_non-free.png');
 }
 
@@ -33,13 +36,13 @@ body {
 
 .hamburger {
     position: relative;
-    margin-right: 20px; 
+    margin-right: 20px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px; 
-    height: 20px; 
+    width: 30px;
+    height: 20px;
 }
 
 .hamburger:hover div {
@@ -54,9 +57,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-/**
-Nav Styles
-**/
+/* ============= Navigation Styles ============= */
 .nav {
     z-index: 2;
     background-color: #1b1b1b;
@@ -70,7 +71,6 @@ Nav Styles
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
-
 }
 
 .nav-wrapper {
@@ -115,9 +115,7 @@ nav a:hover:before {
     height: 100%;
 }
 
-/**
-Animations
-**/
+/* ============= Hamburger Animation Styles ============= */
 #toggle:checked + .hamburger .top-bun {
     transform: rotate(-45deg);
     margin-top: 25px;
@@ -133,10 +131,11 @@ Animations
     margin-top: -7px;
 }
 
-#toggle:checked + .hamburger + .nav , body {
+#toggle:checked + .hamburger + .nav,
+body {
     top: 0;
     transform: scale(1);
-    body{
+    body {
         overflow: hidden;
     }
 }
@@ -145,22 +144,17 @@ Animations
     display: none;
 }
 
-/** Tout ce qui va être UI et jeu présenté **/
-
+/* ============= Game Presentation Styles ============= */
 .all-game {
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
+}
 
 .all-game a {
     color: white;
-    text-decoration:none;
+    text-decoration: none;
 }
-
-
-
-/** Estetique des jeu du moment **/
 
 .all-game div {
     border-width: 10px;
@@ -171,35 +165,36 @@ Animations
     transition: all 0.3s ease-in-out;
 }
 
-.all-game img{
+.all-game img {
     border-radius: 35px;
     transition: all 0.3s ease-in-out;
 }
 
-.left:hover, .center:hover, .right:hover {
+.left:hover,
+.center:hover,
+.right:hover {
     border-color: rgb(81, 119, 255);
 }
 
-
-
-.all-game div:hover img{
+.all-game div:hover img {
     border-radius: 10px;
 }
 
-.right{
+.right {
     margin-right: 50px;
 }
 
-.left{
+.left {
     margin-left: 50px;
 }
 
-.all-game div h3{
+.all-game div h3 {
     text-align: center;
     margin-top: 0px;
 }
 
-.all-game div .info-game, .info-game div{
+.all-game div .info-game,
+.info-game div {
     transform: scale(0);
     padding-bottom: 0px;
     padding-right: 10px;
@@ -207,7 +202,7 @@ Animations
     padding-top: 0px;
 }
 
-.all-game div:hover div{
+.all-game div:hover div {
     transform: scale(1);
 }
 
@@ -217,48 +212,51 @@ div.pres-game {
     border: none;
 }
 
-.grss{
+.grss {
     font-size: 22px;
     transition: all 0.3s ease-in-out;
 }
 
-.grss:hover{
+.grss:hover {
     font-size: 20px;
 }
 
-nav.grss, .info-game p.grss, .info-game div p {
+nav.grss,
+.info-game p.grss,
+.info-game div p {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 11px;
     padding-bottom: 11px;
 }
 
-nav.grss{
+nav.grss {
     height: 35px;
 }
 
-select, option{
+select,
+option {
     background-color: #313131;
-    color:white;
-	border: #777 1px solid;
-	margin: 0 0 1.5em 0;
+    color: white;
+    border: #777 1px solid;
+    margin: 0 0 1.5em 0;
 }
 
-.info-game div{
+.info-game div {
     border: 0px;
     padding: 0px;
 }
 
-.grss p{
+.grss p {
     display: inline;
 }
 
-.old-price{
+.old-price {
     color: rgba(245, 245, 245, 0.6);
     text-decoration: line-through;
 }
 
-/* ===========animation de changement de version========== */
+/* ============= Version Change Animation Styles ============= */
 .fade-out {
     opacity: 0;
     transform: scale(0);
@@ -281,25 +279,24 @@ select, option{
     transition: opacity 1.5s ease-in-out, transform 1s ease-in-out;
 }
 
-/* ===============================FOOTER==================================*/
-
+/* ============= Footer Styles ============= */
 footer {
     background-color: #202020;
     margin-top: 50px;
-    color:white;
-    text-decoration: none;
-}
-
-footer a{
     color: white;
     text-decoration: none;
 }
 
-footer :hover{
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer:hover {
     color: blue;
 }
 
-footer img{
+footer img {
     width: 70px;
     height: auto;
 }
